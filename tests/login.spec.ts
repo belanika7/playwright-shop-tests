@@ -4,6 +4,8 @@ import { LoginPage } from '../pages/LoginPage';
 test('successful login', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
+  console.log("PR test change");
+
   await loginPage.open();
 
   await loginPage.login(
